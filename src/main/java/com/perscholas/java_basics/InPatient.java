@@ -1,6 +1,6 @@
 package com.perscholas.java_basics;
 
-public class InPatient<T extends Patient> {
+public class InPatient<T extends Patient> extends Patient{
     String admissionDate;
     String roomNumber;
 
