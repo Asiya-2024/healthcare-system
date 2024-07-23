@@ -10,12 +10,19 @@ public class Hospital<T extends Patient> {
         this.patients = patients;
     }
 
-    public List<T> getPatients() {
-        return patients;
+    public Patient getPatients(int patientID) {
+        for(Patient patient:patients)
+        {
+            if(patient.getPatientId()==patientID)
+                return patient;
+
+        }
+        return null;
     }
 
-    public void setPatients(List<T> patients) {
-        this.patients = patients;
+    public void addPatient(T patient) {
+        patients=new ArrayList<>();
+        patients.add(patient);
     }
 }
 
