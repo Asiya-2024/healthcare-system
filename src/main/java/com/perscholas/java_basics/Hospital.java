@@ -13,7 +13,7 @@ public class Hospital<T extends Patient> {
     public Patient getPatients(int patientID) {
         for(Patient patient:patients)
         {
-            if(patient.getPatientId()==patientID)
+            if(patient.getPatientID()==patientID)
                 return patient;
 
         }

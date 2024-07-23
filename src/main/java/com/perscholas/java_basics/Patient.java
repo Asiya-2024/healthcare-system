@@ -1,24 +1,24 @@
 package com.perscholas.java_basics;
 
 import java.util.ArrayList;
-import java.util.List;
+import main.java.com.perscholas.java_basics.MedicalRecord;
 
 public class Patient {
-    public int patientId;
+    public int patientID;
     public String name;
     public ArrayList<MedicalRecord> medicalHistory = new ArrayList<MedicalRecord>();
 
     public Patient(int patientId, String name) {
-        this.patientId = patientId;
+        this.patientID = patientId;
         this.name = name;
     }
 
-    public int getPatientId() {
-        return patientId;
+    public int getPatientID() {
+        return patientID;
     }
 
-    public void setPatientId(int patientId) {
-        this.patientId = patientId;
+    public void setPatientID(int patientID) {
+        this.patientID = patientID;
     }
 
     public String getName() {
