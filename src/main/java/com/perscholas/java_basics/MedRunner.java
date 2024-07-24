@@ -29,5 +29,7 @@ public class MedRunner {
         System.out.println(patient.getMedicalHistory());
         patient.updateMedicalRecord(0, medRecord4);
         System.out.println(patient.getMedicalHistory());
+
+        
     }
 }

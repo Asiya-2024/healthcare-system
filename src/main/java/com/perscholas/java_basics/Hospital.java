@@ -5,7 +5,9 @@ import java.util.*;
 public class Hospital<T extends Patient> {
 
     List<T> patients;
-
+    public Hospital(){
+        this.patients=new ArrayList<>();
+    }
     public Hospital(List<T> patients) {
         this.patients = patients;
     }
@@ -21,7 +23,6 @@ public class Hospital<T extends Patient> {
     }
 
     public void addPatient(T patient) {
-        patients=new ArrayList<>();
         patients.add(patient);
     }
 }
