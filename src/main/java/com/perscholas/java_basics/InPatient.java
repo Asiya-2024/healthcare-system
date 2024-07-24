@@ -29,7 +29,9 @@ public class InPatient<T extends Patient> extends Patient{
     @Override
     public String toString() {
         return "InPatient{" +
-                "admissionDate='" + admissionDate + '\'' +
+                "patientID=" + getPatientID() +
+                ", name='" + getName() + '\'' +
+                ", admissionDate='" + admissionDate + '\'' +
                 ", roomNumber='" + roomNumber + '\'' +
                 '}';
     }
